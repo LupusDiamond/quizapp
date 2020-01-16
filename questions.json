@@ -1,0 +1,13 @@
+{
+  "categories": [
+    {
+      "sports": [
+        {
+          "question": "Can you dance?",
+          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "correctAnswer": 3
+        }
+      ]
+    }
+  ]
+}
