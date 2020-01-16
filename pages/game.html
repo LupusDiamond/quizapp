@@ -75,7 +75,7 @@
 
     <div
       id=""
-      class="scale1 absolute bg-indigo-600 t-0 l-0 w-full h-full z-10 mdl"
+      class="scale0 absolute bg-indigo-600 t-0 l-0 w-full h-full z-10 mdl"
     >
       <div class="back absolute t-0 l-0 w-full h-full z-20"></div>
 
@@ -106,12 +106,10 @@
       /// Modal
       const mdl = document.querySelector(".mdl");
       function openModal() {
-        mdl.classList.remove("scale0");
-        mdl.classList.add("scale1");
+        mdl.id = "scale1";
       }
       function closeModal() {
-        mdl.classList.remove("scale1");
-        mdl.classList.add("scale0");
+        mdl.id = "";
       }
     </script>
   </body>
