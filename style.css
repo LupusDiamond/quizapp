@@ -35,4 +35,35 @@ a {
   background-size: cover;
   background-position: center;
 }
+
+/* Game */
+.scale0 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.scale0 .back {
+  background-image: url("./src/bg.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.correct {
+  color: #48BB78;
+}
+
+.wrong {
+  color: #E53E3E;
+}
+
+#scale1 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
 /*# sourceMappingURL=style.css.map */
