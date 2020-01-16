@@ -10,7 +10,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="pageTransitions.js"></script>
+    <link rel="stylesheet" href="pageTransitions.css" />
     <title>Quiz App</title>
   </head>
   <body>
@@ -28,13 +30,14 @@
         </div>
       </div>
     </div>
-
-    <div class="btn flex items-center justify-center">
-      <a
-        href="https://lupusdiamond.github.io/quizapp/pages/categories.html"
-        class="bg-indigo-600 font-semibold text-white text-xl px-8 py-3 rounded-full shadow-md"
-        >Start Now</a
-      >
-    </div>
+    <main id="swup" class="swup-transition-fade">
+      <div class="btn flex items-center justify-center">
+        <a
+          href="./pages/categories.html"
+          class="bg-indigo-600 font-semibold text-white text-xl px-8 py-3 rounded-full shadow-md"
+          >Start Now</a
+        >
+      </div>
+    </main>
   </body>
 </html>
