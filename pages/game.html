@@ -9,6 +9,9 @@
   <body>
     <script>
       document.write(localStorage.getItem("Category"));
+      fetch("../questions.json")
+        .then(response => response.json())
+        .then(text => console.log(text));
     </script>
   </body>
 </html>
