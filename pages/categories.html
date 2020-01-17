@@ -10,8 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="../pageTransitions.js"></script>
+
     <link rel="stylesheet" href="../pageTransitions.css" />
     <title>Quiz App | Categories</title>
   </head>
@@ -76,8 +75,10 @@
         </a>
       </div>
     </div>
-
+    <div id="swup" class="transition-fade"></div>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script>
+      const swup = new Swup();
       function saveCategory(cat) {
         localStorage.setItem("Category", cat);
       }

@@ -10,8 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer src="pageTransitions.js"></script>
+
     <link rel="stylesheet" href="pageTransitions.css" />
     <title>Quiz App</title>
   </head>
@@ -30,7 +29,7 @@
         </div>
       </div>
     </div>
-    <main id="swup" class="swup-transition-fade">
+    <main id="swup" class="transition-fade">
       <div class="btn flex items-center justify-center">
         <a
           href="./pages/categories.html"
@@ -39,5 +38,9 @@
         >
       </div>
     </main>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
   </body>
 </html>
