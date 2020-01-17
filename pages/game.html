@@ -84,20 +84,31 @@
       <div
         class="absolute w-full h-full flex items-center justify-center flex-col"
       >
-        <div class="bg-white max-w-xl max-h-xl p-20 md:p-32 rounded-lg shadow-xl z-30 block big-square">
+        <div
+          class="bg-white max-w-xl max-h-xl p-20 md:p-32 rounded-lg shadow-xl z-30 block big-square"
+        >
           <!-- Result -->
-          <!--<img class="h-32 w-32 mx-auto" src="../src/tick.png" alt="tick">-->
-          <img class="h-32 w-32 mx-auto" src="../src/cross.png" alt="cross">
+          <img
+            class="h-32 w-32 mx-auto hidden"
+            src="../src/tick.png"
+            alt="tick"
+            id="tick"
+          />
+          <img
+            class="h-32 w-32 mx-auto hidden"
+            src="../src/cross.png"
+            alt="cross"
+            id="cross"
+          />
           <h1 class="text-center text-4xl md:text-6xl font-black my-2">
             Correct!
           </h1>
         </div>
-        <div
-          class="m-6 z-30 block"
-          onclick="closeModal()"
-        >
+        <div class="m-6 z-30 block" onclick="">
           <!-- Temporary Button -->
-          <a href="#" class="tap text-center text-white p-6 font-semibold text-lg md:text-4xl"
+          <a
+            href="#"
+            class="tap text-center text-white p-6 font-semibold text-lg md:text-4xl"
             >Tap Anywhere to Continue</a
           >
         </div>
@@ -120,11 +131,14 @@
         if (correct) {
           mdl.querySelector(".big-square").classList.add("bg-green-500");
           mdl.querySelector("h1").innerHTML = "CORRECT!";
+          document.querySelector("#tick").classList.remove("hidden");
           mdl.querySelector("h1").classList.add("text-white");
         } else {
           mdl.querySelector(".big-square").classList.add("bg-red-400");
           mdl.querySelector("h1").innerHTML = "WRONG!";
+          document.querySelector("#cross").classList.remove("hidden");
           mdl.querySelector("h1").classList.add("text-white");
+          console.log("hellooo");
         }
 
         mdl.id = "scale1";
@@ -133,6 +147,8 @@
       function closeModal() {
         mdl.id = "";
         bg.classList.remove("blur");
+        document.querySelector("#tick").classList.add("hidden");
+        document.querySelector("#cross").classList.add("hidden");
         loadNextQuestion();
       }
 
