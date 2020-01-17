@@ -32,8 +32,8 @@
         </p>
 
         <div
-        id="score"
-          class="mx-auto my-3 w-16 h-16 md:w-32 md:h-32 rounded-lg bg-indigo-500 flex justify-center items-center text-white text-2xl md:text-5xl font-black"
+          id="score"
+          class="mx-auto my-3 w-16 h-16 md:w-32 md:h-32 rounded-lg bg-indigo-500 flex justify-center items-center text-white text-2xl md:text-5xl font-black count"
         >
           00
         </div>
@@ -47,13 +47,40 @@
         </div>
       </div>
       <div class="text-center">
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
       </div>
     </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script>
       // Show Score on screen
       const score = localStorage.getItem("Points");
       document.querySelector("#score").innerHTML = "0" + score;
+
+      // Score animation
+
+      $(".count").each(function() {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text()
+            },
+            {
+              duration: 300,
+              easing: "swing",
+              step: function(now) {
+                $(this).text(Math.ceil(now));
+              }
+            }
+          );
+      });
     </script>
   </body>
 </html>
