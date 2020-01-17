@@ -15,7 +15,8 @@
   </head>
 
   <body class="relative bg-indigo-600 min-h-screen">
-    <div class="main w-full h-full p-5 z-0 absolute">
+
+    <div class="main w-full h-full p-5 md:px-24 lg:px-56 z-0 absolute">
       <div class="heading flex flex-col items-center justify-center">
         <h1
           class="text-white font-bold text-center my-3 text-5xl md:text-6xl category-text capitalize"
@@ -26,9 +27,9 @@
 
       <!-- Question -->
 
-      <div class="bg-white rounded-lg w-full shadow-lg p-4">
+      <div class="bg-white rounded-lg w-full shadow-lg p-4 md:p-12">
         <h2
-          class="max-w-md text-center text-lg md:text-2xl mx-auto font-black text-indigo-900"
+          class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-900"
         >
           Q1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           eum nemo voluptas, doloremque minima commodi?
@@ -89,10 +90,10 @@
             Correct!
           </h1>
         </div>
-        <div class="bg-white rounded-lg shadow-xl z-30 block">
+        <div class="bg-white rounded shadow-xl m-6 z-30 block"  onclick="closeModal()">
           <!-- Temporary Button -->
-          <a href="#" class="text-center text-4xl" onclick="closeModal()"
-            >Close</a
+          <a href="#" class="text-center text-indigo-900 p-6 font-semibold text-xl md:text-4xl"
+            >Next</a
           >
         </div>
       </div>
