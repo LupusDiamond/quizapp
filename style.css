@@ -34,6 +34,10 @@ a {
   background-image: url("./src/bg.png");
   background-size: cover;
   background-position: center;
+  -webkit-transform: blur(0);
+          transform: blur(0);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 /* Game */
