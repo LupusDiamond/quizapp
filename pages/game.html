@@ -140,6 +140,7 @@
       let questionNumber = 0,
         questionAmount,
         correctIndex;
+      let pointsGained;
 
       $.getJSON("../questions.json", function(json) {
         qObject = json;
@@ -168,6 +169,7 @@
             break;
         }
 
+        pointsGained = 0;
         questionAmount = qCategory.length;
         loadNextQuestion();
       });
@@ -175,7 +177,7 @@
       function loadNextQuestion() {
         questionNumber++;
         if (questionNumber > questionAmount) {
-          window.location.href = "./end.html";
+          loadEndScreen();
         }
         correctIndex = qCategory[questionNumber - 1].correctAnswer;
 
@@ -199,12 +201,16 @@
       }
       function CheckAnswer(index) {
         if (index == correctIndex) {
-          console.log("correct!");
+          pointsGained++;
           openModal(true);
         } else {
-          console.log("wrong!");
           openModal(false);
         }
+      }
+
+      function loadEndScreen() {
+        window.location.href = "./end.html";
+        localStorage.setItem("Points", pointsGained);
       }
     </script>
   </body>
