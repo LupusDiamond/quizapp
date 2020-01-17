@@ -77,25 +77,28 @@
     <div
       id=""
       class="scale0 absolute bg-transparent t-0 l-0 w-full h-full z-10 mdl"
+      onclick="closeModal()"
     >
       <div class="back absolute t-0 l-0 w-full h-full z-20"></div>
 
       <div
         class="absolute w-full h-full flex items-center justify-center flex-col"
       >
-        <div class="bg-white rounded-lg shadow-xl z-30 block big-square">
+        <div class="bg-white max-w-xl max-h-xl p-20 md:p-32 rounded-lg shadow-xl z-30 block big-square">
           <!-- Result -->
-          <h1 class="text-center p-16 md:p-56 text-4xl md:text-6xl font-black">
+          <!--<img class="h-32 w-32 mx-auto" src="../src/tick.png" alt="tick">-->
+          <img class="h-32 w-32 mx-auto" src="../src/cross.png" alt="cross">
+          <h1 class="text-center text-4xl md:text-6xl font-black my-2">
             Correct!
           </h1>
         </div>
         <div
-          class="bg-white rounded shadow-xl m-6 z-30 block"
+          class="m-6 z-30 block"
           onclick="closeModal()"
         >
           <!-- Temporary Button -->
-          <a href="#" class="text-center text-indigo-900 p-6 font-semibold text-4xl md:text-4xl"
-            >Next</a
+          <a href="#" class="tap text-center text-white p-6 font-semibold text-lg md:text-4xl"
+            >Tap Anywhere to Continue</a
           >
         </div>
       </div>
@@ -119,7 +122,7 @@
           mdl.querySelector("h1").innerHTML = "CORRECT!";
           mdl.querySelector("h1").classList.add("text-white");
         } else {
-          mdl.querySelector(".big-square").classList.add("bg-red-500");
+          mdl.querySelector(".big-square").classList.add("bg-red-400");
           mdl.querySelector("h1").innerHTML = "WRONG!";
           mdl.querySelector("h1").classList.add("text-white");
         }

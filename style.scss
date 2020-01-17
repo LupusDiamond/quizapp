@@ -56,14 +56,6 @@ a {
   opacity: 0;
 }
 
-#correct {
-  color: #48bb78;
-}
-
-#wrong {
-  color: #e53e3e;
-}
-
 .game {
   transform: scale(1);
   transition: all 200ms ease;
@@ -72,10 +64,15 @@ a {
 .blur {
   filter: blur(5px) brightness(0.9);
   transition: all 200ms ease;
+  transform: scale(0.9);
 }
 
 #scale1 {
   transform: scale(1);
   transition: all 200ms ease;
   opacity: 1;
+}
+
+.tap {
+  text-shadow: 0 0 20px #3C366B;
 }
