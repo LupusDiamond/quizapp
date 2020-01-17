@@ -3,6 +3,21 @@
     {
       "sports": [
         {
+          "question": "Can you sing?",
+          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Can you dance?",
+          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Can you dance?",
+          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "correctAnswer": 3
+        },
+        {
           "question": "Can you dance?",
           "answers": ["No", "Yes", "Maybe", "Fuck you"],
           "correctAnswer": 3
