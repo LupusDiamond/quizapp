@@ -34,10 +34,10 @@ $(".count").each(function() {
         Counter: $(this).text()
       },
       {
-        duration: 300,
+        duration: 500,
         easing: "swing",
         step: function(now) {
-          $(this).text(Math.ceil(now));
+          $(this).text("0" + Math.ceil(now));
         }
       }
     );

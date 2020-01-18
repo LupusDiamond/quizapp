@@ -13,6 +13,9 @@ function timerClick() {
     openModal(false);
   }
   timerDOM.innerHTML = secondsLeft;
+  if (secondsLeft < 10) {
+    timerDOM.innerHTML = "0" + secondsLeft;
+  }
 }
 
 resetTimer();
