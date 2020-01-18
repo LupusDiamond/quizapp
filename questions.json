@@ -67,43 +67,43 @@
     {
       "movies": [
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Which person snaps their fingers, and dies in Endgame?",
+          "answers": ["Thanos", "Hulk", "Black Widow", "Iron Man"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "What is Superman's Kryptonian name?",
+          "answers": ["Kal-El", "Kor-El", "Jor-El", "Matt-El"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "What does Superman's 'S' really stand for?",
+          "answers": ["Hope", "Light", "Destruction", "Sanitation"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "In Harry Potter Series, What spell is used to open locked doors?",
+          "answers": ["Reparo", "Revelio", "Alohomora", "Incendio"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "What charm did Professor McGonagall use to bring the statues and suits of armour to life in Deathly Hallows?",
+          "answers": ["Petrificus Totalus", "Piertotum Locomotor", "LOL", "Priori Incantato"],
+          "correctAnswer": 2
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "Captain America looks Good with a Beard?",
+          "answers": ["No", "Yes", "Maybe", "Definitely"],
+          "correctAnswer": 4
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "Does Voldemort have a Nose?",
+          "answers": ["No", "Not Sure", "Maybe", "Who Cares"],
+          "correctAnswer": 2
         },
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Who is the largest Red Bird in The Angry Birds Movie?",
+          "answers": ["Red", "Chuck", "Terence", "Mighty Eagle"],
           "correctAnswer": 3
         }
       ]
@@ -111,43 +111,43 @@
     {
       "science": [
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Can the human stomach dissolve razor blades?",
+          "answers": ["No", "Yes", "Maybe", "LOL"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "There are more trees on Earth than stars in our galaxy?",
+          "answers": ["No", "Yes", "Maybe", "LOL"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Which letter doesn't appear even once on the Periodic Table?",
+          "answers": ["Z", "Y", "J", "F"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Which type of mammals can fly?",
+          "answers": ["Flying Squirrel", "Pigeons", "Kryptonians", "Bats"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "Is it possible to Burp in space?",
+          "answers": ["No", "Yes", "Maybe", "LOL"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "What is the most common element in the Earth's crust?",
+          "answers": ["Hydrogen", "Plastic", "Carbon", "Oxygen"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "What is the color of a Lobster's Blood?",
+          "answers": ["Transparent", "Red", "Blue", "Black"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Women blink nearly twice as often as men?",
+          "answers": ["Maybe", "False", "True", "LOL"],
           "correctAnswer": 3
         }
       ]
@@ -155,43 +155,43 @@
     {
       "literature": [
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Who was the author of the famous storybook 'Alice's Adventures in Wonderland'?",
+          "answers": ["Rudyard Kipling", "John Keats", "Lewis Carroll", "H G Wells"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Who wrote the famous 1855 poem 'The Charge of the Light Brigade'?",
+          "answers": ["Lord Alfred Tennyson", "Christopher Marlowe", "Johannes Gutenberg", "René Descartes"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Who wrote 'Where ignorance is bliss, it is folly to be wise'?",
+          "answers": ["Browning", "Marx", "Shakespeare", "Kipling"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "Name the book which opens with the line 'All children, except one grew up'?",
+          "answers": ["The Railway Children", "YWinnie the Poo", "Jungle book", "Peter Pan"],
+          "correctAnswer": 4
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "Which is the first Harry Potter book?",
+          "answers": ["HP and the Goblet of Fire", "HP and the Philosopher’s Stone", "HP and the Chamber of Secrets", "HP and the God of small Things"],
+          "correctAnswer": 2
         },
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "What was the nationality of Robert Louis Stevenson, writer of 'Treasure Island'?",
+          "answers": ["Scottish", "Welsh", "Irish", "French"],
+          "correctAnswer": 1
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "'Jane Eyre' was written by which Bronte sister?",
+          "answers": ["Anne", "Charlotte", "Emily", "None of the Above"],
+          "correctAnswer": 2
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "What is the book 'Lord of the Flies' about?",
+          "answers": ["A round trip around the USA", "A swarm of killer flies", "Schoolboys on the desert island", "None of the above"],
           "correctAnswer": 3
         }
       ]
