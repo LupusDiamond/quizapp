@@ -1,145 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#5A67D8" />
-    <link rel="shortcut icon" href="../src/Logo.png" type="image/x-icon" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <title>Quiz App | Game</title>
-  </head>
 
-  <body class="relative bg-indigo-600 min-h-screen">
-    <!-- Game -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#5A67D8" />
+  <link rel="shortcut icon" href="../src/Logo.png" type="image/x-icon" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Quiz App | Game</title>
+</head>
 
-    <div class="main w-full h-full p-3 md:px-16 lg:px-48 z-0 absolute">
-      <div class="heading flex flex-col items-center justify-center">
-        <h1
-          class="text-white font-bold text-center text-5xl md:text-6xl category-text capitalize"
-        >
-          Whatever
+<body class="relative bg-indigo-600 min-h-screen">
+  <!-- Game -->
+
+  <div class="main w-full h-full p-3 md:px-16 lg:px-48 z-0 absolute">
+    <div class="heading flex flex-col items-center justify-center">
+      <h1 class="text-white font-bold text-center text-5xl md:text-6xl category-text capitalize">
+        Whatever
+      </h1>
+    </div>
+
+    <!-- Question -->
+
+    <div class="bg-white rounded-lg w-full shadow-lg p-4">
+      <h3
+        class="flex items-center justify-center max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-700 pt-4 mb-12">
+        Time Remaining :
+        <div class="flex items-center justify-center bg-indigo-500 rounded w-10 h-10 md:w-12 md:w-12 text-white ml-2">
+          <span id="timer">00</span>
+        </div>
+      </h3>
+      <h2 class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-900 question-text">
+        Q1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        eum nemo voluptas, doloremque minima commodi?
+      </h2>
+
+      <!-- Options -->
+
+      <div class="text-lg md:text-xl font-semibold text-indigo-700 max-w-xl mx-auto my-4">
+        <div class="block md:flex">
+          <div onclick="CheckAnswer(1)"
+            class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2">
+            <a href="#" class="option-a"> A. oooolala </a>
+          </div>
+          <div onclick="CheckAnswer(2)"
+            class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2">
+            <a href="#" class="option-b"> B. Dos </a>
+          </div>
+        </div>
+
+        <div class="block md:flex">
+          <div onclick="CheckAnswer(3)"
+            class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2">
+            <a href="#" class="option-c"> C. Tres </a>
+          </div>
+          <div onclick="CheckAnswer(4)"
+            class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2">
+            <a href="#" class="option-d"> D. Balalala llaaa </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="flex items-center max-w-xl mx-auto p-4 md:p-12 text-indigo-700 font-bold">
+        Progress
+        <div class="w-full h-6 p-1 mx-2 rounded-full bg-indigo-300">
+          <div class="h-full bg-indigo-500 rounded-full pg-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+
+  <div id="" class="scale0 absolute bg-transparent t-0 l-0 w-full h-full z-10 mdl" onclick="closeModal()">
+    <div class="back absolute t-0 l-0 w-full h-full z-20"></div>
+
+    <div class="absolute w-full h-full flex items-center justify-center flex-col">
+      <div class="bg-white max-w-xl max-h-xl py-16 px-20 md:px-32 md:py-24 rounded-lg shadow-xl z-30 block big-square">
+        <!-- Result -->
+        <img class="h-32 w-32 md:h-48 md:w-48 mx-auto hidden" src="../src/tick.png" alt="tick" id="tick" />
+        <img class="h-32 w-32 md:h-48 md:w-48 mx-auto hidden" src="../src/cross.png" alt="cross" id="cross" />
+        <h1 class="text-center text-4xl md:text-6xl font-black mt-2">
+          Correct!
         </h1>
       </div>
-
-      <!-- Question -->
-
-      <div class="bg-white rounded-lg w-full shadow-lg p-4 md:p-12">
-        <h3
-          class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-700 pt-4 mb-12"
-        >
-          Time Remaining :
-          <span id="timer" class="bg-indigo-500 rounded p-2 text-white"
-            >00</span
-          >
-        </h3>
-        <h2
-          class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-900 question-text"
-        >
-          Q1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          eum nemo voluptas, doloremque minima commodi?
-        </h2>
-
-        <!-- Options -->
-
-        <div
-          class="text-lg md:text-xl font-semibold text-indigo-700 max-w-xl mx-auto my-4"
-        >
-          <div class="block md:flex">
-            <div
-              onclick="CheckAnswer(1)"
-              class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2"
-            >
-              <a href="#" class="option-a"> A. oooolala </a>
-            </div>
-            <div
-              onclick="CheckAnswer(2)"
-              class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2"
-            >
-              <a href="#" class="option-b"> B. Dos </a>
-            </div>
-          </div>
-
-          <div class="block md:flex">
-            <div
-              onclick="CheckAnswer(3)"
-              class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2"
-            >
-              <a href="#" class="option-c"> C. Tres </a>
-            </div>
-            <div
-              onclick="CheckAnswer(4)"
-              class="p-3 my-3 mx-2 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 md:w-1/2"
-            >
-              <a href="#" class="option-d"> D. Balalala llaaa </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Progress Bar -->
-        <div
-          class="flex items-center max-w-xl mx-auto p-4 md:p-12 text-indigo-700 font-bold"
-        >
-          Progress
-          <div class="w-full h-6 p-1 mx-2 rounded-full bg-indigo-300">
-            <div class="h-full bg-indigo-500 rounded-full pg-bar"></div>
-          </div>
-        </div>
+      <div class="m-6 z-30 block" onclick="">
+        <!-- Temporary Button -->
+        <a href="#" class="tap text-center text-white p-6 font-semibold text-md md:text-2xl">Tap Anywhere to
+          Continue</a>
       </div>
     </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../scripts/modal.js"></script>
+  <script src="../scripts/questions.js"></script>
+  <script src="../scripts/title.js"></script>
+  <script src="../scripts/timer.js"></script>
+  <script src="../scripts/progressBar.js"></script>
+  <script src="../scripts/blur.js"></script>
+</body>
 
-    <!-- Popup -->
-
-    <div
-      id=""
-      class="scale0 absolute bg-transparent t-0 l-0 w-full h-full z-10 mdl"
-      onclick="closeModal()"
-    >
-      <div class="back absolute t-0 l-0 w-full h-full z-20"></div>
-
-      <div
-        class="absolute w-full h-full flex items-center justify-center flex-col"
-      >
-        <div
-          class="bg-white max-w-xl max-h-xl py-16 px-20 md:px-32 md:py-24 rounded-lg shadow-xl z-30 block big-square"
-        >
-          <!-- Result -->
-          <img
-            class="h-32 w-32 md:h-48 md:w-48 mx-auto hidden"
-            src="../src/tick.png"
-            alt="tick"
-            id="tick"
-          />
-          <img
-            class="h-32 w-32 md:h-48 md:w-48 mx-auto hidden"
-            src="../src/cross.png"
-            alt="cross"
-            id="cross"
-          />
-          <h1 class="text-center text-4xl md:text-6xl font-black mt-2">
-            Correct!
-          </h1>
-        </div>
-        <div class="m-6 z-30 block" onclick="">
-          <!-- Temporary Button -->
-          <a
-            href="#"
-            class="tap text-center text-white p-6 font-semibold text-lg md:text-4xl"
-            >Tap Anywhere to Continue</a
-          >
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../scripts/modal.js"></script>
-    <script src="../scripts/questions.js"></script>
-    <script src="../scripts/title.js"></script>
-    <script src="../scripts/timer.js"></script>
-    <script src="../scripts/progressBar.js"></script>
-    <script src="../scripts/blur.js"></script>
-  </body>
 </html>
