@@ -32,7 +32,10 @@
           onclick="saveCategory('sports')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 mb-4 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          A. Sports <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          A. Sports
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
 
         <a
@@ -40,7 +43,10 @@
           onclick="saveCategory('movies')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 mb-4 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          B. Movies & TV <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          B. Movies & TV
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
 
         <a
@@ -48,7 +54,10 @@
           onclick="saveCategory('science')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 mb-4 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          C. Science <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          C. Science
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
 
         <a
@@ -56,7 +65,10 @@
           onclick="saveCategory('literature')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 mb-4 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          D. Literature <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          D. Literature
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
 
         <a
@@ -64,7 +76,10 @@
           onclick="saveCategory('history')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 mb-4 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          E. History <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          E. History
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
 
         <a
@@ -72,17 +87,84 @@
           onclick="saveCategory('technology')"
           class="w-full py-2 px-3 rounded border-2 border-indigo-300 hover:text-white hover:bg-indigo-500 hover:border-indigo-600 block"
         >
-          F. Technology <span class="float-right"> <span id="score">0</span>/<span id="total">0</span></span>
+          F. Technology
+          <span class="float-right">
+            <span id="score">0</span>/<span id="total">0</span></span
+          >
         </a>
       </div>
     </div>
     <div id="swup" class="transition-fade"></div>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       const swup = new Swup();
       function saveCategory(cat) {
         localStorage.setItem("Category", cat);
       }
+    </script>
+    <script>
+      /// Questions
+      let qObject, catObject, categories, qCategory;
+      let questionNumber = 0,
+        questionAmount,
+        correctIndex;
+      let pointsGained;
+
+      $.getJSON("../questions.json", function(json) {
+        qObject = json;
+      }).done(function() {
+        /// Get question amount for each category
+        const categoriesDOM = document.querySelectorAll("#total");
+        let questionsJSON;
+        let i = 0;
+        categoriesDOM.forEach(function(element) {
+          questionsJSON = qObject[Object.keys(qObject)[0]];
+          let currentCat = questionsJSON[Object.keys(questionsJSON)[i++]];
+          currentCat = currentCat[Object.keys(currentCat)[0]];
+          element.innerHTML = currentCat.length;
+        });
+      });
+
+      /// Load Points
+
+      if (localStorage.getItem("points-sports") == null) {
+        localStorage.setItem("points-sports", 0);
+      }
+      if (localStorage.getItem("points-movies") == null) {
+        localStorage.setItem("points-movies", 0);
+      }
+      if (localStorage.getItem("points-science") == null) {
+        localStorage.setItem("points-science", 0);
+      }
+      if (localStorage.getItem("points-literature") == null) {
+        localStorage.setItem("points-literature", 0);
+      }
+      if (localStorage.getItem("points-history") == null) {
+        localStorage.setItem("points-history", 0);
+      }
+      if (localStorage.getItem("points-technology") == null) {
+        localStorage.setItem("points-technology", 0);
+      }
+
+      document.querySelectorAll("#score")[0].innerHTML = localStorage.getItem(
+        "points-sports"
+      );
+      document.querySelectorAll("#score")[1].innerHTML = localStorage.getItem(
+        "points-movies"
+      );
+      document.querySelectorAll("#score")[2].innerHTML = localStorage.getItem(
+        "points-science"
+      );
+      document.querySelectorAll("#score")[3].innerHTML = localStorage.getItem(
+        "points-literature"
+      );
+      document.querySelectorAll("#score")[4].innerHTML = localStorage.getItem(
+        "points-history"
+      );
+      document.querySelectorAll("#score")[5].innerHTML = localStorage.getItem(
+        "points-technology"
+      );
     </script>
   </body>
 </html>

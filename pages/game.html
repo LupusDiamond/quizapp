@@ -15,7 +15,6 @@
   </head>
 
   <body class="relative bg-indigo-600 min-h-screen">
-
     <!-- Game -->
 
     <div class="main w-full h-full p-3 md:px-16 lg:px-48 z-0 absolute">
@@ -30,11 +29,13 @@
       <!-- Question -->
 
       <div class="bg-white rounded-lg w-full shadow-lg p-4 md:p-12">
-
         <h3
           class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-700 pt-4 mb-12"
         >
-          Time Remaining : <span id="timer" class="bg-indigo-500 rounded p-2 text-white">00:00</span>
+          Time Remaining :
+          <span id="timer" class="bg-indigo-500 rounded p-2 text-white"
+            >00:00</span
+          >
         </h3>
         <h2
           class="max-w-lg text-center text-lg md:text-2xl mx-auto font-black text-indigo-900 question-text"
@@ -80,12 +81,14 @@
         </div>
 
         <!-- Progress Bar -->
-        <div class="flex items-center max-w-xl mx-auto p-6 text-indigo-700 font-bold">
-          Progress 
+        <div
+          class="flex items-center max-w-xl mx-auto p-4 md:p-12 text-indigo-700 font-bold"
+        >
+          Progress
           <div class="w-full h-6 p-1 mx-2 rounded-full bg-indigo-300">
             <div class="w-1/12 h-full bg-indigo-500 rounded-full"></div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
 
@@ -184,22 +187,22 @@
         categories = catObject[Object.keys(catObject)[0]];
         switch (categorySelected) {
           case "sports":
-            qCategory = categories.sports;
+            qCategory = catObject[Object.keys(catObject)[0]].sports;
             break;
           case "movies":
-            qCategory = categories.movies;
+            qCategory = catObject[Object.keys(catObject)[1]].movies;
             break;
           case "science":
-            qCategory = categories.science;
+            qCategory = catObject[Object.keys(catObject)[2]].science;
             break;
           case "literature":
-            qCategory = categories.literature;
+            qCategory = catObject[Object.keys(catObject)[3]].literature;
             break;
           case "history":
-            qCategory = categories.history;
+            qCategory = catObject[Object.keys(catObject)[4]].history;
             break;
           case "technology":
-            qCategory = categories.technology;
+            qCategory = catObject[Object.keys(catObject)[5]].technology;
             break;
         }
 
