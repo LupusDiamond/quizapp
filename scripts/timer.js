@@ -13,7 +13,6 @@ function timerClick() {
     openModal(false);
   }
   timerDOM.innerHTML = secondsLeft;
-  console.log(timerDOM);
 }
 
 resetTimer();

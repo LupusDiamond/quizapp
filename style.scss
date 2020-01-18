@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
+body {
+  /*-webkit-box-shadow: inset 67px 6px 3000px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 67px 6px 3000px 0px rgba(255, 255, 255, 1);
+  box-shadow: inset 67px 6px 3000px 0px rgba(255, 255, 255, 1);*/
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -94,6 +100,7 @@ a {
 
 .tap {
   text-shadow: 0 0 100px #3c366b;
+  color: #3c366b;
 }
 
 .pg-bar {
