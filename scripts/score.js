@@ -2,7 +2,7 @@
 
 // Show Score on screen
 const score = localStorage.getItem("Points");
-document.querySelector("#score").innerHTML = "0" + score;
+document.querySelector("#score").innerHTML = "0" + score * 20;
 
 // Save points
 if (localStorage.getItem("Category") == "sports") {
@@ -34,10 +34,12 @@ $(".count").each(function() {
         Counter: $(this).text()
       },
       {
-        duration: 500,
+        duration: 800,
         easing: "swing",
         step: function(now) {
-          $(this).text("0" + Math.ceil(now));
+          //if (now * 20 < 9) $(this).text("0" + Math.ceil(now) * 20);
+          //else $(this).text(Math.ceil(now) * 20);
+          $(this).text(Math.ceil(now));
         }
       }
     );
