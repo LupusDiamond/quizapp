@@ -199,87 +199,87 @@
     {
       "history": [
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Which country did Germany invade on the 1st of September 1939?",
+          "answers": ["France", "Czechoslovakia", "Poland", "Finland"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "What was the first country to give women the vote in 1893?",
+          "answers": ["America", "Australia", "Iceland", "New Zealand"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "What is the oldest known story in the world?",
+          "answers": ["The Epic of Gilgamesh", "The Odyssey", "The Bible", "The Histories"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Which of these was one of the seven ancient wonders of the world?",
+          "answers": ["Lighthouse of Alexandria", "Taj Mahal", "Great Wall of China", "Macchu Picchu"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Sliced bread was invented in:",
+          "answers": ["Scotland in 1902", "Australia in 1897", "France in 1789", "America in 1928"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "In which country was the French Revolution of 1789?",
+          "answers": ["Mexico", "France", "Italy", "Germany"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Who was said to be so beautiful that her face launched a thousand ships?",
+          "answers": ["Nefertiti", "Cleopatra", "Helen", "Salome"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
+          "question": "In 1066 at the Battle of Hastings, King Harold was defeated by:",
+          "answers": ["Harald", "William", "Tostig", "Ragnar"],
+          "correctAnswer": 2
         }
       ]
     },
     {
       "technology": [
         {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "When did the Apple iPhone first become available?",
+          "answers": ["2007", "2006", "2008", "2005"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "'OS' computer abbreviation usually means?",
+          "answers": ["Order of Significance", "Open Software", "Operating System", "Optical Sensor"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Which is a type of Electrically-Erasable Programmable Read-Only Memory?",
+          "answers": ["Flash", "Flange", "Fury", "FRAM"],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Who developed Yahoo?",
+          "answers": ["Dennis Ritchie & Ken Thompson", "David Filo & Jerry Yang", "Vint Cerf & Robert Kahn", "Steve Case & Jeff Bezos"],
+          "correctAnswer": 2
+        },
+        {
+          "question": "The most common format for a home video recorder is VHS. VHS stands for...?",
+          "answers": ["Voltage house standard", "Video horizontal standard", "Very high speed", "Video Home System"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "When measuring the characteristics of a small-signal amplifier, say for a radio receiver, one might be concerned with its 'Noise...'?",
+          "answers": ["Fundamental", "Fall", "Force", "Figure"],
+          "correctAnswer": 4
+        },
+        {
+          "question": "The sampling rate, (how many samples per second are stored) for a CD is...?",
+          "answers": ["48.4 kHz", "22,050 Hz", "44.1 kHz", "48 kHz"],
           "correctAnswer": 3
         },
         {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you sing?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
-          "correctAnswer": 3
-        },
-        {
-          "question": "Can you dance?",
-          "answers": ["No", "Yes", "Maybe", "Fuck you"],
+          "question": "Who co-founded Hotmail in 1996 and then sold the company to Microsoft?",
+          "answers": ["Shawn Fanning", "Ada Byron Lovelace", "Sabeer Bhatia", "Ray Tomlinson"],
           "correctAnswer": 3
         }
       ]
