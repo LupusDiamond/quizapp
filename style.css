@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
-body {
-  -webkit-box-shadow: inset 67px 6px 3000px 0px white;
-  box-shadow: inset 67px 6px 3000px 0px white;
-}
-
 * {
   padding: 0;
   margin: 0;
