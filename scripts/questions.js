@@ -42,6 +42,7 @@ function loadNextQuestion() {
   if (questionNumber > questionAmount) {
     loadEndScreen();
   }
+  loadProgress();
   correctIndex = qCategory[questionNumber - 1].correctAnswer;
 
   // Get question text

@@ -91,6 +91,11 @@ a {
 }
 
 .tap {
-  text-shadow: 0 0 100px #3C366B;
+  text-shadow: 0 0 100px #3c366b;
+}
+
+.pg-bar {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
