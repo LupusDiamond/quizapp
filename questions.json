@@ -171,7 +171,7 @@
         },
         {
           "question": "Name the book which opens with the line 'All children, except one grew up'?",
-          "answers": ["The Railway Children", "YWinnie the Poo", "Jungle book", "Peter Pan"],
+          "answers": ["The Railway Children", "Winnie the Poo", "Jungle book", "Peter Pan"],
           "correctAnswer": 4
         },
         {
