@@ -42,8 +42,8 @@ a {
   background-image: url("./src/bg.png");
   background-size: cover;
   background-position: center;
-  -webkit-transform: blur(0);
-          transform: blur(0);
+  -webkit-transform: brightness(1);
+          transform: brightness(1);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
@@ -74,12 +74,12 @@ a {
 }
 
 .blur {
-  -webkit-filter: blur(5px) brightness(0.9);
-          filter: blur(5px) brightness(0.9);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 #scale1 {
@@ -92,7 +92,7 @@ a {
 
 .tap {
   text-shadow: 0 0 100px #3c366b;
-  color: #3c366b;
+  color: #3e2fb4;
 }
 
 .pg-bar {
