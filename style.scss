@@ -82,7 +82,7 @@ a {
 }
 
 .blur {
-  filter: brightness(0.7);
+  filter: opacity(0.3);
   transition: all 200ms ease;
   transform: scale(0.95);
 }
